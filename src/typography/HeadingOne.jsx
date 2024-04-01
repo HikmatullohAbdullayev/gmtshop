@@ -8,4 +8,4 @@ function HeadingOne(props) {
     );
 }
 
-export default Headingh1;HeadingOne
+export default HeadingOne;
