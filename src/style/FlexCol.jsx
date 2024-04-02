@@ -1,11 +1,10 @@
 import React from 'react';
 
 function FlexCol({
-    children,
-    width
+    children
 }) {
     return (
-        <div className={`flex flex-col justify-between items-center ${width}`}>
+        <div className={`flex flex-col justify-between items-center `}>
             {children}
         </div>
     );
