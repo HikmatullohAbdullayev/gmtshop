@@ -12,3 +12,8 @@
 .div8 { grid-area: 3 / 3 / 4 / 4; }
 .div9 { grid-area: 4 / 2 / 5 / 3; }
 .div10 { grid-area: 4 / 3 / 5 / 4; }
+
+.slick-slide{
+    padding: 10px;
+    width: 320px !important
+}

@@ -1,9 +1,9 @@
 import React from 'react';
 
-function HeadingOne(props) {
+function HeadingOne({children}) {
     return (
-        <h1>
-            HeadingOne
+        <h1 className='font-medium text-[48px] table:text-[34px] mobile:text-[28px]'>
+            {children}
         </h1>
     );
 }
