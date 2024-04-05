@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "name": "Maxsulot nomi 1",
+      "image": "../../src/assets/img/img1.png",
+      "price": 10000,
+      "description": "Bu maxsulot haqida qisqacha ma'lumot 1"
+    },
+    {
+      "id": 2,
+      "name": "Maxsulot nomi 2",
+      "image": "../../src/assets/img/img2.png",
+      "price": 15000,
+      "description": "Bu maxsulot haqida qisqacha ma'lumot 2"
+    },
+    {
+      "id": 3,
+      "name": "Maxsulot nomi 3",
+      "image": "../../src/assets/img/img3.png",
+      "price": 20000,
+      "description": "Bu maxsulot haqida qisqacha ma'lumot 3"
+    },
+    {
+      "id": 4,
+      "name": "Maxsulot nomi 4",
+      "image": "../../src/assets/img/img2.png",
+      "price": 12000,
+      "description": "Bu maxsulot haqida qisqacha ma'lumot 4"
+    },
+    {
+      "id": 5,
+      "name": "Maxsulot nomi 5",
+      "image": "../../src/assets/img/img1.png",
+      "price": 18000,
+      "description": "Bu maxsulot haqida qisqacha ma'lumot 5"
+    },
+    {
+      "id": 6,
+      "name": "Maxsulot nomi 6",
+      "image": "../../src/assets/img/img4.png",
+      "price": 13500,
+      "description": "Bu maxsulot haqida qisqacha ma'lumot 6"
+    },
+    {
+      "id": 7,
+      "name": "Maxsulot nomi 7",
+      "image": "../../src/assets/img/img3.png",
+      "price": 22000,
+      "description": "Bu maxsulot haqida qisqacha ma'lumot 7"
+    },
+    {
+      "id": 8,
+      "name": "Maxsulot nomi 8",
+      "image": "../../src/assets/img/img1.png",
+      "price": 16000,
+      "description": "Bu maxsulot haqida qisqacha ma'lumot 8"
+    },
+    {
+      "id": 9,
+      "name": "Maxsulot nomi 9",
+      "image": "../../src/assets/img/img4.png",
+      "price": 19000,
+      "description": "Bu maxsulot haqida qisqacha ma'lumot 9"
+    },
+    {
+      "id": 10,
+      "name": "Maxsulot nomi 10",
+      "image": "../../src/assets/img/img2.png",
+      "price": 25000,
+      "description": "Bu maxsulot haqida qisqacha ma'lumot 10"
+    }
+  ]
+  

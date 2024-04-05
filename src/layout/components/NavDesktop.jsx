@@ -8,11 +8,7 @@ import ProductIcon from "../../assets/icon/ProductIcon";
 function NavDesktop({ toggleModal }) {
   const userLogin = localStorage.getItem("userInfo");
 
-  const removeLogin = () =>(
-      localStorage.removeItem('userInfo')
-    )
-
-    
+  const removeLogin = () => localStorage.removeItem("userInfo");
 
   return (
     <nav>

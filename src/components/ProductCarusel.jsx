@@ -8,7 +8,7 @@ import Button from "./Button.jsx";
 import HeadingThere from "../typography/HeadingThere.jsx";
 import TextOne from "../typography/TextOne.jsx";
 import TextTwo from "../typography/TextTwo.jsx";
-import foto from "../assets/img/Photo.png"
+import foto from "../assets/img/img4.png"
 
 
 function SampleNextArrow(props) {
