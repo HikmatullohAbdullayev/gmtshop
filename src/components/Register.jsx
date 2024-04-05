@@ -1,66 +1,19 @@
-// import axios from 'axios';
-// import React, { useState } from 'react';
-// import {useForm} from "react-hook-form"
-
-// function Register({open, setOpen}) {
-    
-
-//     const toggleModal = () => {
-//         setOpen(!open);
-//     };
-
-// const { register,
-//      handleSubmit,
-//       formState: {errors}, 
-//      } = useForm()
-
-
-//      const dataSubmit = (dataForm) => {
-//         console.log(dataForm)
-//      }
-
-//     return (
-//         <div >
-//             {open && (
-//                 <div className="fixed z-50 top-0 left-0 w-full h-full flex justify-center items-center bg-gray-500 bg-opacity-50">
-//                     <div className="bg-white w-[400px] p-5 rounded-lg">
-//                         <form onSubmit={handleSubmit(dataSubmit)} className='relative'>
-//                         <button className="absolute top-2 right-2" onClick={toggleModal}>Close</button>
-
-//                             <div className="inp">
-//                                 <input  {...register("email", {require:true})} />
-//                                 {errors.email && <p>email yoz</p>}
-//                             </div>
-//                             <div className="inp">
-//                                 <input  id="password" {...register("password", {require:true})} />
-//                                 {errors.password && <p>password yoz</p>}
-//                             </div>
-
-//                             <button type='submit'>send</button>
-//                         </form>
-//                     </div>
-//                 </div>
-//             )}
-           
-//         </div>
-//     );
-// }
-
-// export default Register;
-
-
 
 import axios from 'axios';
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form"
-import { requset } from '../constants/requset';
+import toast, { Toaster } from 'react-hot-toast';
 
 function Register({ open, setOpen }) {
+
+    // const [token, setToken] = useState("")
 
     const toggleModal = () => {
         setOpen(!open);
         reset()
     };
+  
+    
 
     const { register,
         handleSubmit,
@@ -76,12 +29,17 @@ function Register({ open, setOpen }) {
             password: dataForm.password
           })
           .then(function (response) {
-            console.log(response.data.token);
+            const data = response.data.token
+            localStorage.setItem("userInfo", data)
+            toast.success("Xush kelibsiz")
           })
           .catch(function (error) {
+            toast.error("Emailda xatolik bor")
             console.log(error);
           });
+          console.log(data);
         console.log(dataForm)
+
         reset()
 
     }
@@ -89,6 +47,10 @@ function Register({ open, setOpen }) {
   
     return (
         <div>
+            <Toaster
+  position="top-center"
+  reverseOrder={false}
+/>
             {open && (
                 <div className="fixed z-20 top-0 left-0 w-full h-full flex justify-center items-center bg-gray-500 bg-opacity-50">
                     <div className="bg-white w-[400px] p-5 rounded-lg">
@@ -104,7 +66,7 @@ function Register({ open, setOpen }) {
                                 {errors.password && <p>Parol 8-10 ta belgi bo'lishi shart</p>}
                             </div>
 
-                            <button type='submit'>Yuborish</button>
+                            <button  type='submit'>Yuborish</button>
                         </form>
                     </div>
                 </div>

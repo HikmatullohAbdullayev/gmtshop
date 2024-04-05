@@ -18,9 +18,13 @@ import { useState } from 'react';
 
 function Header(props) {
     const [open, setOpen] = useState(false);
+    
+
     const toggleModal = () => {
         setOpen(!open);
     };
+
+    
     return (
         <header className=''>
            <div className='container py-[10px] flex justify-between'>
