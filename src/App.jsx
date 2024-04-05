@@ -1,27 +1,10 @@
-import Header from "./layout/Header";
-import Footer from "./layout/Footer";
-
-import Container from "./style/Container";
-import Wrapper from "./style/Wrapper";
-import Flex from "./style/Flex";
-
-import Button from "./components/Button";
-import HeadingTwo from "./typography/HeadingTwo";
-import TextOne from "./typography/TextOne";
-
-import NewCarusel from "./components/NewCarusel";
-import BrendCarusel from "./components/BrendCarusel";
-import CustomSliders from "./components/HeroCarusel";
-// import ProductCarusel from "./components/ProductCarusel";
-
-import imagesData from "./constants/imgData";
-// import ProductCaruselSection from "./pages/sections/ProductCaruselSection";
-import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
-import Product from "./pages/Product";
-import Favorite from "./pages/Favorite";
-import ProductDetail from "./pages/ProductDetail";
+
 import MainLayout from "./layout/MainLayout";
+import Home from "./pages/Home";
+import Favorite from "./pages/Favorite";
+import Product from "./pages/Product";
+import ProductDetail from "./pages/ProductDetail";
 
 function App() {
   return (

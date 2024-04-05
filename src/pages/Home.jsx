@@ -1,12 +1,13 @@
 import React from 'react';
 import ProductCaruselSection from './sections/ProductCaruselSection';
-import HeroCarusel from '../components/HeroCarusel';
+// import Why from '../components/Why';
 
 function Home(props) {
     return (
         <div>
-            <HeroCarusel/>
             <ProductCaruselSection/>
+            
+            {/* <Why/> */}
         </div>
     );
 }
