@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Tovar(props) {
+function Favorite(props) {
     return (
         <div>
-            Tovar
+            Favorite
         </div>
     );
 }
 
-export default Tovar;
+export default Favorite;

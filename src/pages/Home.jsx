@@ -1,9 +1,12 @@
 import React from 'react';
+import ProductCaruselSection from './sections/ProductCaruselSection';
+import HeroCarusel from '../components/HeroCarusel';
 
 function Home(props) {
     return (
         <div>
-            Home
+            <HeroCarusel/>
+            <ProductCaruselSection/>
         </div>
     );
 }

@@ -3,12 +3,12 @@ import HeadingOne from "../typography/HeadingOne"
 
 function Header(props) {
     return (
-        <div>
+        <header>
             <HeadingOne>
             Header
             </HeadingOne>
 
-        </div>
+        </header>
     );
 }
 

@@ -9,10 +9,10 @@ import HeadingThere from "../typography/HeadingThere.jsx";
 import TextOne from "../typography/TextOne.jsx";
 
 
-function SampleNextArrow(props) {
+function NextArrow(props) {
   const {  onClick } = props;
   return (
-    <div
+    <button
       className={` absolute left-10 top-[360px] h-8 w-8 rounded-full bg-white border border-slate-600 text-center rotate-180 p-[12px]  flex justify-center items-center  hover:bg-[#088269]  table1080:hidden`}
       
       onClick={onClick}
@@ -21,14 +21,14 @@ function SampleNextArrow(props) {
      <VectorIcon />
       </span>
 
-    </div>
+    </button>
   );
 }
 
-function SamplePrevArrow(props) {
+function PrevArrow(props) {
   const {  onClick } = props;
   return (
-    <div
+    <button
       className={` absolute left-0  top-[360px]  h-8 w-8 rounded-full bg-white border border-slate-600 text-center  p-[12px]  flex justify-center items-center  hover:bg-[#088269]  table1080:hidden`}
       
       onClick={onClick}
@@ -36,7 +36,7 @@ function SamplePrevArrow(props) {
       <span className="w-[41px] h-[41px] mt-6 cursor-pointer table1080:hidden">
         <VectorIcon />
       </span>
-    </div>
+    </button>
   );
 }
 
@@ -49,8 +49,8 @@ function NewCarusel() {
     autoplay: true,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
