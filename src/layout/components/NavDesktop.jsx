@@ -14,7 +14,7 @@ function NavDesktop({ toggleModal }) {
   return (
     <nav>
       <ul className=" flex justify-between items-center gap-[25px]">
-        <li className="p-1 flex flex-col justify-between items-center gap-[6px]">
+        <li className="p-1 flex flex-col justify-between items-center gap-[6px] cursor-pointer">
           {userLogin ? (
             <span className="w-[18px]  " onClick={removeLogin}>
               <LogOutIcon />
@@ -27,7 +27,7 @@ function NavDesktop({ toggleModal }) {
 
           <p className=" text-[14px] text-secondary2">Войти</p>
         </li>
-        <li className="p-1 flex flex-col justify-between items-center gap-[6px]">
+        <li className="p-1 flex flex-col justify-between items-center gap-[6px] cursor-pointer">
           <Link to="favorite">
           <span className="w-[20px] ">
             <FavoriteIcon />
@@ -35,13 +35,13 @@ function NavDesktop({ toggleModal }) {
           </Link>
           <p className=" text-[14px] text-secondary2">Избранное</p>
         </li>
-        <li className="p-1 flex flex-col justify-between items-center gap-[6px]">
+        <li className="p-1 flex flex-col justify-between items-center gap-[6px] cursor-pointer">
           <span className="w-[18px] ">
             <ChartsIcon />
           </span>
           <p className=" text-[14px] text-secondary2">Сравнить</p>
         </li>
-        <li className="p-1 flex flex-col justify-between items-center gap-[6px]">
+        <li className="p-1 flex flex-col justify-between items-center gap-[6px] cursor-pointer">
          <Link to="favorite">
          <span className="w-[20px] ">
             <ProductIcon />
