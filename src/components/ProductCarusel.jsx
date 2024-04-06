@@ -9,6 +9,7 @@ import HeadingThere from "../typography/HeadingThere.jsx";
 import TextOne from "../typography/TextOne.jsx";
 import TextTwo from "../typography/TextTwo.jsx";
 import foto from "../assets/img/img4.png"
+import { Link } from "react-router-dom";
 
 
 function SampleNextArrow(props) {
@@ -144,7 +145,8 @@ function ProductCarusel() {
               <Button secondary={true}>Бесплатная консультация</Button>
             </div>
             <div className="">
-              <Button primary={true}>Все товары</Button>
+              <Button primary={true}><Link to="product">
+              Все товары</Link></Button>
             </div>
 
           </div>
