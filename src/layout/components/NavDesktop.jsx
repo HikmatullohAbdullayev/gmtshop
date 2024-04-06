@@ -42,9 +42,11 @@ function NavDesktop({ toggleModal }) {
           <p className=" text-[14px] text-secondary2">Сравнить</p>
         </li>
         <li className="p-1 flex flex-col justify-between items-center gap-[6px]">
-          <span className="w-[20px] ">
+         <Link to="favorite">
+         <span className="w-[20px] ">
             <ProductIcon />
           </span>
+          </Link>
           <p className=" text-[14px] text-secondary2">Корзина</p>
         </li>
       </ul>
