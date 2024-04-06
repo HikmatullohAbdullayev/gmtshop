@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
+import Button from "./Button";
 
 function Register({ open, setOpen }) {
   // const [token, setToken] = useState("")
@@ -45,32 +46,36 @@ function Register({ open, setOpen }) {
       {open && (
         <div className="fixed z-20 top-0 left-0 w-full h-full flex justify-center items-center bg-gray-500 bg-opacity-50">
           <div className="bg-white w-[400px] p-5 rounded-lg">
-            <form onSubmit={handleSubmit(dataSubmit)} className="relative">
-              <button className="absolute top-2 right-2" onClick={toggleModal}>
-                Close
-              </button>
+            <form  onSubmit={handleSubmit(dataSubmit)} className="relative bg-secondaryGray90 p-2">
+             <div className="absolute top-0 right-0"> 
+             <Button secondary2={true} onClick={toggleModal}>
+                x
+              </Button></div>
 
-              <div className="inp">
-                <input
+              <div className="p-2 mt-10 ">
+                <input className="w-full p-2 rounded-lg outline-primaryGray"
                   type="email"
                   id="email"
                   name="email"
+                  placeholder="Email"
                   {...register("email", { required: true })}
                 />
-                {errors.email && <p>Email yozilishi shart</p>}
+                {errors.email && <p className="text-primaryGray p-2">Email yozilishi shart</p>}
               </div>
-              <div className="inp">
+              <div className="p-2">
                 <input
+                className="w-full p-2 rounded-lg outline-primaryGray"
                   type="password"
                   id="password"
                   maxLength="10"
                   minLength="8"
+                  placeholder="Password"
                   {...register("password", { required: true })}
                 />
-                {errors.password && <p>Parol 8-10 ta belgi bo'lishi shart</p>}
+                {errors.password && <p  className="text-primaryGray p-2">Parol 8-10 ta belgi bo'lishi shart</p>}
               </div>
 
-              <button type="submit">Yuborish</button>
+              <Button secondary={true} type="submit">Yuborish</Button>
             </form>
           </div>
         </div>
