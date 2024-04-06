@@ -7,8 +7,10 @@ import HeadingThere from '../typography/HeadingThere';
 import TextOne from '../typography/TextOne';
 import TextTwo from '../typography/TextTwo';
 import { Link } from 'react-router-dom';
+import Button from './Button';
 
 function ProductComp(props) {
+ 
     return (
         <div className='container'>
           <div className="box">
@@ -17,6 +19,7 @@ function ProductComp(props) {
                 <Fragment 
                 key={item.id}>
 
+                <div className="link">
                 <Link to={`/product/${item.id}`}>
                 <div
                   className=" border border-secondary2 rounded-lg " 
@@ -38,6 +41,10 @@ function ProductComp(props) {
                     </div>
                 </div>
                 </Link>
+                <div className="w-full my-2 text-center">
+                  <Button primary={true} >rewiuw</Button>
+                  </div>
+                </div>
                 </Fragment>
               ))}
             </div>

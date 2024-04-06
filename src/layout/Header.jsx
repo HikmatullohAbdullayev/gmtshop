@@ -15,6 +15,7 @@ import Button from "../components/Button.jsx";
 import TextOne from "../typography/TextOne.jsx";
 import Register from "../components/Register.jsx";
 import { useState } from "react";
+import Breadcrumb from "../components/Breadcrumb.jsx";
 
 function Header(props) {
   const [open, setOpen] = useState(false);
@@ -87,6 +88,7 @@ function Header(props) {
       <div className="  relative flex justify-center items-center bg-red-500">
         <Register open={open} setOpen={setOpen} />
       </div>
+      <Breadcrumb/>
     </header>
   );
 }
