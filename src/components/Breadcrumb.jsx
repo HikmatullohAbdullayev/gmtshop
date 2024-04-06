@@ -9,14 +9,14 @@ function Breadcrumb(props) {
     .map((crumb) => {
         currentLink.push(`/${crumb}`)
         return(
-            <Fragment >
+            <Fragment key={crumb} >
                 <Link className='text-xl' to={currentLink.join('')}>{crumb}</Link>
             </Fragment>
         )
     })
     
     return (
-        <div className='flex gap-5 p-5'>
+        <div key={crumbs} className='flex gap-5 p-5'>
             {crumbs}
         </div>
     );

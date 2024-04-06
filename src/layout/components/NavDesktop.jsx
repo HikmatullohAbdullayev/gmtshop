@@ -4,6 +4,7 @@ import LogOutIcon from "../../assets/icon/LogOutIcon";
 import FavoriteIcon from "../../assets/icon/FavoriteIcon";
 import ChartsIcon from "../../assets/icon/ChartsIcon";
 import ProductIcon from "../../assets/icon/ProductIcon";
+import { Link } from "react-router-dom";
 
 function NavDesktop({ toggleModal }) {
   const userLogin = localStorage.getItem("userInfo");
@@ -27,9 +28,11 @@ function NavDesktop({ toggleModal }) {
           <p className=" text-[14px] text-secondary2">Войти</p>
         </li>
         <li className="p-1 flex flex-col justify-between items-center gap-[6px]">
+          <Link to="favorite">
           <span className="w-[20px] ">
             <FavoriteIcon />
           </span>
+          </Link>
           <p className=" text-[14px] text-secondary2">Избранное</p>
         </li>
         <li className="p-1 flex flex-col justify-between items-center gap-[6px]">

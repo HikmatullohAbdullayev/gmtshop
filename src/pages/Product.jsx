@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 import  { Fragment } from 'react';
@@ -14,15 +14,16 @@ import Breadcrumb from '../components/Breadcrumb';
 
 function Product(props) {
     const { id } = useParams()
+    const [modalOpen, setIsModalOpen] = useState(false)
 
-    const openModal = () => {
-        
-        console.log("Modal ochilgan"); // Matn chiqarish
+    const openModal = (productId) => {
+        setIsModalOpen(!modalOpen)
+        console.log(`modal ${productId} ochildi ${modalOpen}`); // Matn chiqarish
     };
     return (
         <div>
             
-            <Link to={`/product/${id}`}>
+            
             <div className="box">
              <div className="grid grid-cols-3 grid-rows-4  p-2 gap-5  ">
                {ProductData.map((item) => (
@@ -52,14 +53,14 @@ function Product(props) {
                 </div>
                 </Link>
                 <div className="w-full my-2 text-center">
-                  <Button primary={true} onClick={() => openModal()} >rewiuw</Button>
+                  <Button primary={true} onClick={() => openModal(item.id)} >rewiuw</Button>
                   </div>
                 </div>
                 </Fragment>
               ))}
             </div>
           </div> 
-            </Link>
+          
         </div>
     );
 }
