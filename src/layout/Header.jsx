@@ -85,12 +85,15 @@ function Header(props) {
           <Button secondary={true}>+7(495)000-00-00</Button>
           <Button primary={true}>Заказать звонок</Button>
         </div>
+        
+      </div>
+      <div className="container">
+      <Breadcrumb/>
       </div>
 
       <div className="  relative flex justify-center items-center bg-red-500">
         <Register open={open} setOpen={setOpen} />
       </div>
-      <Breadcrumb/>
     </header>
   );
 }
