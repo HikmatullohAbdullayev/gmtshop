@@ -1,9 +1,9 @@
 
 
-function Button({ primary,secondary,secondary2,  children, btn }) {
+function Button({ primary,secondary,secondary2,  children, onClick }) {
     return (
         <button
-        onClick={btn}
+        onClick={onClick}
          className={`py-[11px] px-[30px] rounded-full font-semibold
          ${primary ? "bg-primaryGray text-white hover:bg-secondaryGray100 focus:outline focus:outline-white  active:bg-[#066753]" : ""}
          ${secondary ? "bg-white text-primaryGray border border-[#D5D1E1]  border-solid hover:border-primaryGray focus:bg-secondaryGray90 active:border-primaryGray active:text-primaryGray" : ""}

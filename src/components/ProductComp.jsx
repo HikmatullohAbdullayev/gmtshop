@@ -1,19 +1,44 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Product from "../constants/productData.json"
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import HeadingThere from '../typography/HeadingThere';
+import TextOne from '../typography/TextOne';
+import TextTwo from '../typography/TextTwo';
+import { Link } from 'react-router-dom';
 
 function ProductComp(props) {
     return (
-        <div>
+        <div className='container'>
           <div className="box">
-             <div className="grid grid-cols-3 grid-rows-4 gap-0 lg:grid lg:grid-cols-2 lg:grid-rows-6 lg:gap-0 ">
+             <div className="grid grid-cols-3 grid-rows-4  p-2 gap-5  ">
                {Product.map((item) => (
+                <Fragment 
+                key={item.id}>
+
+                <Link to={`/product/${item.id}`}>
                 <div
-                  key={item.id}
-                  className=""
+                  className=" border border-secondary2 rounded-lg " 
                 >
-                  <img src={item.image} alt="rasm" />
-                  {item.text}
+                 <div className=" object-cover  ">
+                 
+                 <img className=' w-full object-cover rounded-lg h-[300px]' src={item.image} alt="img" />
+                 </div>
+                  <div className="flex flex-col gap-4 p-4">
+                  <HeadingThere>
+                  {item.name}
+                  </HeadingThere>
+                  <TextTwo>
+                    {item.description}
+                  </TextTwo>
+                  <TextOne>
+                    {item.price}$
+                  </TextOne>
+                    </div>
                 </div>
+                </Link>
+                </Fragment>
               ))}
             </div>
           </div>  

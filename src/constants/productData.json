@@ -9,65 +9,59 @@
     {
       "id": 2,
       "name": "Maxsulot nomi 2",
-      "image": "../../src/assets/img/img2.png",
+      "image": "https://global-mt.ru/upload/iblock/eaf/gzpaz5zsp1p9oe1yxshv75n4q1dgmm0q.jpg",
       "price": 15000,
       "description": "Bu maxsulot haqida qisqacha ma'lumot 2"
     },
     {
       "id": 3,
       "name": "Maxsulot nomi 3",
-      "image": "../../src/assets/img/img3.png",
+      "image": "https://global-mt.ru/upload/iblock/e14/wokbfqb53lc62yziutew71i58y0ghrn9.jpg",
       "price": 20000,
       "description": "Bu maxsulot haqida qisqacha ma'lumot 3"
     },
     {
       "id": 4,
       "name": "Maxsulot nomi 4",
-      "image": "../../src/assets/img/img2.png",
+      "image": "https://global-mt.ru/upload/iblock/43a/jusolr5zmf0vmj7sryr32t9l61cbp9v8.jpg",
       "price": 12000,
       "description": "Bu maxsulot haqida qisqacha ma'lumot 4"
     },
     {
       "id": 5,
       "name": "Maxsulot nomi 5",
-      "image": "../../src/assets/img/img1.png",
+      "image": "https://global-mt.ru/upload/iblock/465/vv3o2xy20djaq6ova73l8dwftnucc2g7.jpg",
       "price": 18000,
       "description": "Bu maxsulot haqida qisqacha ma'lumot 5"
     },
     {
       "id": 6,
       "name": "Maxsulot nomi 6",
-      "image": "../../src/assets/img/img4.png",
+      "image": "https://global-mt.ru/upload/iblock/c3e/ieoodcdxcfyc9x74m2vqhpd07igw9nkw.jpg",
       "price": 13500,
       "description": "Bu maxsulot haqida qisqacha ma'lumot 6"
     },
     {
       "id": 7,
       "name": "Maxsulot nomi 7",
-      "image": "../../src/assets/img/img3.png",
+      "image": "https://global-mt.ru/upload/iblock/40e/jeffba2043muyxdhc9gx4i2hy0toh0go.jpg",
       "price": 22000,
       "description": "Bu maxsulot haqida qisqacha ma'lumot 7"
     },
     {
       "id": 8,
       "name": "Maxsulot nomi 8",
-      "image": "../../src/assets/img/img1.png",
+      "image": "https://global-mt.ru/upload/iblock/0f6/d7r0ggt09arxqxxpy5yzhgsicusxhmun.jpg",
       "price": 16000,
       "description": "Bu maxsulot haqida qisqacha ma'lumot 8"
     },
     {
       "id": 9,
       "name": "Maxsulot nomi 9",
-      "image": "../../src/assets/img/img4.png",
+      "image": "https://global-mt.ru/upload/iblock/40e/jeffba2043muyxdhc9gx4i2hy0toh0go.jpg",
       "price": 19000,
       "description": "Bu maxsulot haqida qisqacha ma'lumot 9"
-    },
-    {
-      "id": 10,
-      "name": "Maxsulot nomi 10",
-      "image": "../../src/assets/img/img2.png",
-      "price": 25000,
-      "description": "Bu maxsulot haqida qisqacha ma'lumot 10"
     }
+   
   ]
   
