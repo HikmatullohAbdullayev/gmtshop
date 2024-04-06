@@ -9,7 +9,6 @@ function Home(props) {
             <ProductComp/>
             <ProductCaruselSection/>
             
-            {/* <Why/> */}
         </div>
     );
 }

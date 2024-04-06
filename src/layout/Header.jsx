@@ -47,13 +47,15 @@ function Header(props) {
       </div>
       <hr />
       <div className="container flex justify-between items-center py-[26px]">
-        <div className="logo w-[96px]">
+      <Link to="/">
+      <div className="logo w-[96px]">
           <LazyLoadImage
             alt="logo"
             src="../../src/assets/img/logo.png"
             effect="opacity"
           />
         </div>
+      </Link>
         <HeaderSearch />
         <div className="w-120px ">
           <TextThere>Пн-Пт с 09:00-19:00</TextThere>
