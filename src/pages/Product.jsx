@@ -29,7 +29,7 @@ function Product(props) {
     
     return (
         <div>
-            <div className="box">
+            <div className=" container box">
                 <div className="grid grid-cols-3  p-2 gap-5">
                     {ProductData.map((item) => (
                         <Fragment key={item.id}>

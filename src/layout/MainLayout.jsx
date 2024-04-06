@@ -11,7 +11,7 @@ function MainLayout(props) {
      <Wrapper>
      <div className="box">
       <Header/>
-       <main>
+       <main className='container'>
         <Outlet/>
        </main>
       </div>

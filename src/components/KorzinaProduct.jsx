@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 function KorzinaProduct(props) {
     useEffect(() => {
         const cartProducts = JSON.parse(localStorage.getItem('cartProducts'));
-        console.log(cartProducts);
+      
     }, []);
     return (
         <div>

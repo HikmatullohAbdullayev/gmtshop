@@ -34,8 +34,7 @@ function Register({ open, setOpen }) {
         toast.error("Emailda xatolik bor");
         console.log(error);
       });
-    console.log(data);
-    console.log(dataForm);
+   
 
     reset();
   };

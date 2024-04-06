@@ -13,18 +13,16 @@ function ProductR({ itemIdClik, closeModal }) {
   const clickedItem = productData.find((item) => item.id === itemIdClik);
   useEffect(()=>{
       if (clickedItem) {
-    //   console.log(clickedItem);
       setItemId(clickedItem);
     } else {
-      console.log("xato");
+      console.log(error.message);
     }
   },[])
   
-  console.log(itemId);
   // productId ni ishlatib, kerakli ma'lumotlarni olish va chiqarish
   return (
     <div className="fixed z-10 inset-0 overflow-y-auto">
-      <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center ">
+      <div className="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center ">
         <div className="fixed " >
           <div className="absolute ">
             

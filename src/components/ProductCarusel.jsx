@@ -84,9 +84,7 @@ function ProductCarusel() {
       },
     ],
   };
-  function gap() {
-    console.log('Button clicked!');
-  }
+
  
 
   return (
