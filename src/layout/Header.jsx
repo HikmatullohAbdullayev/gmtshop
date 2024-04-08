@@ -51,7 +51,7 @@ function Header(props) {
       <div className="logo w-[96px]">
           <LazyLoadImage
             alt="logo"
-            src="../../src/assets/img/logo.png"
+            src="https://global-mt.ru/local/templates/gmt/img/Logo.svg"
             effect="opacity"
           />
         </div>
