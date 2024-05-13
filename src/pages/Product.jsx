@@ -30,7 +30,7 @@ function Product(props) {
     return (
         <div>
             <div className=" container box">
-                <div className="grid grid-cols-3  p-2 gap-5">
+                <div className="grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))]  p-2 gap-5">
                     {ProductData.map((item) => (
                         <Fragment key={item.id}>
                             <div className="link">

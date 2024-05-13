@@ -35,7 +35,7 @@ function ProductR({ itemIdClik, closeModal }) {
             <div className=" absolute right-0 top-0 bg-gray-50 px-4 py-3 ">
             <Button secondary={true} onClick={closeModal}>Yopish</Button>
           </div>
-              <div className=" flex mt-[50px] gap-10   text-center">
+              <div className=" mt-[50px] gap-10  grid-cols-[repeat(auto-fill,minmax(350px,1fr))]  text-center">
                 <div className="max-w-[500px] h-[300px] ">
                     <img className="w-full h-full object-cover rounded-2xl" src={itemId?.image} alt="img" />
                 </div>
@@ -43,7 +43,7 @@ function ProductR({ itemIdClik, closeModal }) {
                   <HeadingThere>
                     {itemId?.name}
                   </HeadingThere>
-                  <div className="mt-2 max-w-[300px] flex flex-col gap-2 px-5 py-2">
+                  <div className="mt-2 max-w-[300px] flex flex-col gap-2 px-2 mx-auto  py-2">
                     <TextOne>  {itemId?.description}</TextOne>
                     
                     <TextOne> Price: {itemId?.price}$</TextOne>

@@ -9,8 +9,7 @@ import { Link } from "react-router-dom";
 
 function Favorite(props) {
   const [uniqueItems, setUniqueItems] = useState([]);
-  const [count, setcount] = useState(1)
-
+const [count, setCount] = useState(1)
   useEffect(() => {
 
     //takrorlanuvchi idlarni tekshiradi va agar bor  bo'lsa bittasini oladi
@@ -22,21 +21,23 @@ function Favorite(props) {
         return uniqueItems;
       }, []);
     }
+    console.log(uniqueItems);
         // localStoragedan maxsulotlarni oladi va iniy itemsga beradi
     const cartProducts = JSON.parse(localStorage.getItem("cartProducts"));
     const uniqueItemsArr = getId(cartProducts);
     setUniqueItems(uniqueItemsArr);
   }, []);
-
+console.log(uniqueItems);
   
     //maxsulotni orttirib boradi
     const inc = () => {
-        setcount((prev) => prev + 1);
+        setCount((prev) => prev + 1);
+        
     }
      //maxsulotni kamaytirib boradi
     const dec = () => {
         count > 0 ?
-        setcount((prev) => prev - 1) : "";
+        setCount((prev) => prev - 1) : "";
     }
 
     const clearProduct = (removeId) =>{
@@ -48,28 +49,33 @@ function Favorite(props) {
     }
 
   return (
-    <div>
+    <div className=" grid gap-5 ">
       {uniqueItems?.length > 0 ? (
         uniqueItems.map((item) => (
-            <div key={item.id} className="flex gap-20">
-                <div className="w-[300px]">
+            <div key={item.id} className="flex justify-center mx-auto w-full text-center gap-10  tablemin:flex-col">
+                <div className="max-w-[400px] mx-auto ">
                     <img className="w-full" src={item.image} alt="img" />
                 </div>
             <div className="info">
             <HeadingThere>{item.name}</HeadingThere>
-              <TextOne>{item.price}</TextOne>
+              <TextOne>{item.price*item.count}</TextOne>
               <TextTwo>{item.description}</TextTwo>
             </div>
-            <div className="cle">
+            
+            
+            <div className="flex flex-col justify-evenly  mx-auto w-[200px]">
+          
+                    <div className="flex  justify-between items-center">
+                    <Button secondary={true} onClick={dec}>-</Button>
+                    <TextOne>{item.count}</TextOne>
+                    <Button secondary={true} onClick={inc}>+</Button>
+                    </div>
+                    
+                    <div className="mx-auto">
                 <Button secondary2={true} onClick={()=> clearProduct(item.id)}>
                     clear               
                      </Button>
             </div>
-            
-            <div className="flex  justify-between items-center w-[200px]">
-                    <Button secondary={true} onClick={dec}>-</Button>
-                    <TextOne>{count}</TextOne>
-                    <Button secondary={true} onClick={inc}>+</Button>
                 </div>
             
               

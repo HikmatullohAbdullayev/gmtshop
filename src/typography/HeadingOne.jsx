@@ -2,7 +2,7 @@ import React from 'react';
 
 function HeadingOne({children}) {
     return (
-        <h1 className='font-medium text-[48px] table:text-[34px] mobile:text-[28px]'>
+        <h1 className='font-medium text-[36px] table:text-[34px] mobile:text-[28px]'>
             {children}
         </h1>
     );

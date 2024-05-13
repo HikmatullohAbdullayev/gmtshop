@@ -37,9 +37,18 @@ function ProductDetail(props) {
       const alreadyAdded = storedProducts.find((item) => item.id === id);
       if (!alreadyAdded) {
         // Tanlangan maxsulotni mahsulotlar ro'yxatiga qo'shish
-        const updatedProducts = [...storedProducts, product];
-        localStorage.setItem("cartProducts", JSON.stringify(updatedProducts));
+        let newProduct = {}
+    
+        newProduct = {
+          ...product,
+          count:count
+        }
 
+        console.log(newProduct);
+    
+        const updatedProducts = [...storedProducts, newProduct];
+        localStorage.setItem("cartProducts", JSON.stringify(updatedProducts));
+        console.log(updatedProducts);
         toast.success("Maxsulot muvaffaqiyatli qo'shildi");
         Toaster;
       } else {
@@ -55,15 +64,15 @@ function ProductDetail(props) {
   return (
     <>
       <Toaster position="top-center" reverseOrder={false} />
-      <div className=" conainer flex justify-around items-center gap-10">
-        <div className="w-[600px] h-[400px]  ">
+      <div className=" conainer mx-auto  grid grid-cols-2 table1080:grid-cols-1  table1080:gap-5   ">
+        <div className="max-w-[600px] mx-auto  px-[20px] table1080:max-w-full">
           <img
             className="w-full h-full object-cover"
             src={product.image}
             alt="img"
           />
         </div>
-        <div className="flex  flex-col  gap-10">
+        <div className="flex  flex-col  gap-10 max-w-[400px] px-[15px] ">
           <div className="text">
             <HeadingOne>{product.name}</HeadingOne>
             <TextOne>{countPrice}</TextOne>

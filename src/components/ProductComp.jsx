@@ -30,10 +30,10 @@ function Product(props) {
         <div>
             <div className="box">
               <Breadcrumb/>
-                <div className="grid grid-cols-3  p-2 gap-5">
+                <div className="grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))]  gap-5">
                     {ProductData.map((item) => (
                         <Fragment key={item.id}>
-                            <div className="link">
+                            <div className="link hover:shadow-md rounded-2xl p-2">
                                 <Link to={`/product/${item.id}`}>
                                     <div className="border border-secondary2 rounded-lg">
                                         <div className="object-cover">
