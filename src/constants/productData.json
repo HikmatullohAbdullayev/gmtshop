@@ -1,67 +1,65 @@
 [
-    {
+  {
       "id": 1,
-      "name": "Maxsulot nomi 1",
+      "name": "Yuqori sifatli tibbiy niqoblar",
       "image": "https://global-mt.ru/upload/iblock/e61/yzbb9v8otr4mzuu8dded27n3drtn77o5.jpg",
       "price": 10000,
-      "description": "Bu maxsulot haqida qisqacha ma'lumot 1"
-    },
-    {
+      "description": "Bu niqoblar yuqori himoya darajasini ta'minlaydi va bakteriyalardan himoya qiladi."
+  },
+  {
       "id": 2,
-      "name": "Maxsulot nomi 2",
+      "name": "Engil va qulay doka niqoblar",
       "image": "https://global-mt.ru/upload/iblock/eaf/gzpaz5zsp1p9oe1yxshv75n4q1dgmm0q.jpg",
       "price": 15000,
-      "description": "Bu maxsulot haqida qisqacha ma'lumot 2"
-    },
-    {
+      "description": "Engil va qulay doka niqoblar, uzoq muddatli foydalanish uchun ideal."
+  },
+  {
       "id": 3,
-      "name": "Maxsulot nomi 3",
+      "name": "Tibbiy qo'lqoplar",
       "image": "https://global-mt.ru/upload/iblock/e14/wokbfqb53lc62yziutew71i58y0ghrn9.jpg",
       "price": 20000,
-      "description": "Bu maxsulot haqida qisqacha ma'lumot 3"
-    },
-    {
+      "description": "Bu qo'lqoplar yuqori darajadagi gigiena va himoya ta'minlaydi."
+  },
+  {
       "id": 4,
-      "name": "Maxsulot nomi 4",
+      "name": "Yod dori",
       "image": "https://global-mt.ru/upload/iblock/43a/jusolr5zmf0vmj7sryr32t9l61cbp9v8.jpg",
       "price": 12000,
-      "description": "Bu maxsulot haqida qisqacha ma'lumot 4"
-    },
-    {
+      "description": "Bu yod dori ochiq jarohatlar va kesiklar uchun mo'ljallangan."
+  },
+  {
       "id": 5,
-      "name": "Maxsulot nomi 5",
+      "name": "Steril doka",
       "image": "https://global-mt.ru/upload/iblock/465/vv3o2xy20djaq6ova73l8dwftnucc2g7.jpg",
       "price": 18000,
-      "description": "Bu maxsulot haqida qisqacha ma'lumot 5"
-    },
-    {
+      "description": "Steril doka yaralarni o'rash va himoya qilish uchun mo'ljallangan."
+  },
+  {
       "id": 6,
-      "name": "Maxsulot nomi 6",
+      "name": "Tibbiy spirt",
       "image": "https://global-mt.ru/upload/iblock/c3e/ieoodcdxcfyc9x74m2vqhpd07igw9nkw.jpg",
       "price": 13500,
-      "description": "Bu maxsulot haqida qisqacha ma'lumot 6"
-    },
-    {
+      "description": "Tibbiy spirt yaralarni dezinfeksiya qilish uchun ishlatiladi."
+  },
+  {
       "id": 7,
-      "name": "Maxsulot nomi 7",
+      "name": "Termometr",
       "image": "https://global-mt.ru/upload/iblock/40e/jeffba2043muyxdhc9gx4i2hy0toh0go.jpg",
       "price": 22000,
-      "description": "Bu maxsulot haqida qisqacha ma'lumot 7"
-    },
-    {
+      "description": "Bu termometr tana haroratini aniq o'lchash uchun ishlatiladi."
+  },
+  {
       "id": 8,
-      "name": "Maxsulot nomi 8",
+      "name": "Dastlabki tibbiy yordam sumkasi",
       "image": "https://global-mt.ru/upload/iblock/0f6/d7r0ggt09arxqxxpy5yzhgsicusxhmun.jpg",
       "price": 16000,
-      "description": "Bu maxsulot haqida qisqacha ma'lumot 8"
-    },
-    {
+      "description": "Dastlabki tibbiy yordam sumkasi favqulodda holatlar uchun kerakli vositalar bilan to'ldirilgan."
+  },
+  {
       "id": 9,
-      "name": "Maxsulot nomi 9",
+      "name": "Bemorlar uchun yostiq",
       "image": "https://global-mt.ru/upload/iblock/40e/jeffba2043muyxdhc9gx4i2hy0toh0go.jpg",
       "price": 19000,
-      "description": "Bu maxsulot haqida qisqacha ma'lumot 9"
-    }
-   
-  ]
-  
+      "description": "Bemorlar uchun qulay va ortopedik yostiq."
+  }
+]

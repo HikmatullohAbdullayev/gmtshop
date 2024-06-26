@@ -52,7 +52,7 @@ function ProductDetail(props) {
         toast.success("Maxsulot muvaffaqiyatli qo'shildi");
         Toaster;
       } else {
-        toast.error("bu maxsulot avvalroq qo'shilgan");
+        toast.error("Bu maxsulot avvalroq qo'shilgan");
         console.log(error);
       }
     } else {
